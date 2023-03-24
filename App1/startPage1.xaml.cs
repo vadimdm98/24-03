@@ -12,9 +12,9 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class startPage1 : ContentPage
     {
-        List<Page> pages = new List<Page>() { new Entry(), new Timer_Page(), new BoxViev_Pages(), new Valgusfoor() ,new Snegovik_Page(), new Frame_Page()};
+        List<Page> pages = new List<Page>() { new Entry(), new Timer_Page(), new BoxViev_Pages(), new Valgusfoor() ,new Snegovik_Page(), new Frame_Page(), new Popup1() };
         
-        List<string> tekstid = new List<string> { "Ava tekst leht", "Ava timer leht", "Ava box leht", "Ava valgusfoor leht", "Ava snegovik leht", "Ava frame leht" };
+        List<string> tekstid = new List<string> { "Ava tekst leht", "Ava timer leht", "Ava box leht", "Ava valgusfoor leht", "Ava snegovik leht", "Ava frame leht","Ava poupup leht" };
         public startPage1()
         
        {
@@ -40,40 +40,9 @@ namespace App1
                 st.Children.Add(button);
                 button.Clicked += Navig_funktsion;
             }
-            //InitializeComponent();
-            //Button Entry_btn = new Button
-            //{
-            //    Text = "Ava Entry leht",
-            //    TextColor = Color.Tomato,
-            //    BackgroundColor = Color.Violet,
-            //    TabIndex = 0
-            //};
-            //Button Timer_btn = new Button
-            //{
-            //    Text = "Ava Timer leht",
-            //    TextColor = Color.Tomato,
-            //    BackgroundColor = Color.Violet,
-            //    TabIndex = 1
-            //};
-            //Button Box_btn = new Button
-            //{
-            //    Text = "Ava Timer leht",
-            //    TextColor = Color.Tomato,
-            //    BackgroundColor = Color.Violet,
-            //    TabIndex = 2
-            //};
-            //Button Valgusfoor_btn = new Button
-            //{
-            //    Text = "Ava Valgusfoor leht",
-            //    TextColor = Color.Tomato,
-            //    BackgroundColor = Color.Violet,
-            //    TabIndex = 3
-            //};
             
             Content = st;
-            //Entry_btn.Clicked += Navig_funktsion;
-            //Timer_btn.Clicked += Navig_funktsion;
-            //Box_btn.Clicked += Navig_funktsion;
+            
 
 
         }
